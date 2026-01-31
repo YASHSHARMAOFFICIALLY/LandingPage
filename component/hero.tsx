@@ -14,7 +14,7 @@ export const Hero = () => {
                 <Heading as= "h1">
                     Agents that do the work <br/> Approval that keep you safe
                 </Heading>
-                <SubHeading className="py-8">
+                <SubHeading className="py-8 ">
                     Deploy Al agents that plan,act through tool, and report outcome-without changing how your teams work 
                 </SubHeading>
                 <div className="flex items-center gap-6">

@@ -9,6 +9,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'assets.accernity.com', // ADD THIS ONE (from your error)
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

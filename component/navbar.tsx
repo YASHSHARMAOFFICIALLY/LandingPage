@@ -92,7 +92,7 @@ export const MobileNavbar = () =>{
                          <Link
                         key = {index} 
                         href={items.href}
-                        className="text-sm text-neutral-600 dark:text-neutral-400 font-medium">
+                        className="text-sm block  text-red-800 dark:text-neutral-400 font-bold">
                             {items.title}
                         </Link>
                     </motion.div>
@@ -123,7 +123,7 @@ export const DesktopNavbar = () => {
                     {navlink.map((item,index)=>{
                         return(
                             <Link key = {index} href = {item.href}
-                            className="text-sm text-neutral-600 dark:text-neutral-400 font-medium">
+                            className="text-sm text-red-600 dark:text-red-900 font-medium">
                                 {item.title}
                                 </Link>
                         )
@@ -131,7 +131,7 @@ export const DesktopNavbar = () => {
                 </div>
                 <div className="flex items-center gap-4">
                     <Link href = "/login" className="text-sm px-4 py-2 rounded-md  
-                     text-neutral-600 dark:text-neutral-400 font-medium">
+                    text-neutral-900 font-medium">
                     Login
                     </Link>
                     <Button >

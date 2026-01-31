@@ -7,6 +7,6 @@ export const SubHeading = ({children,className,as = 'p'}:{
 })=>{
     const Tag = as;
     return(
-      <Tag className = {cn('text-base md:text-lg text-neutral-400 dark:text-neutral-600 font-inter max-w-xl ',className)}>{children}</Tag>
+      <Tag className = {cn('text-base md:text-lg font-medium font-inter max-w-xl ',className)}>{children}</Tag>
     )
 }
