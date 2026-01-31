@@ -26,7 +26,7 @@ export const LogoCloud = ()=>{
         }
     ]
     return (
-        <div>
+        <div className="pb-10 md:pb-10">
             <h2 className="text-neutral-600 dark:text-neutral-600 text-center text-lg max-w-xl mx-auto mt-80 font-medium ">
                 Trusted by modern operators across industries.<br/> {""}
                <span className="text-neutral-400">
