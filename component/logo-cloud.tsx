@@ -1,6 +1,7 @@
+"use client"
 import { title } from "process";
 import React from "react";
-
+import {motion} from "motion/react"
 import Image from "next/image";
 export const LogoCloud = ()=>{
     const logos = [
@@ -35,14 +36,31 @@ export const LogoCloud = ()=>{
 
       
            {logos.map((logo,index)=> (
+            <motion.div initial = {{
+                y: -10,
+                opacity:0,
+                filter:"blur(10px)"
+            }} 
+            whileInView={{
+                y:0,
+                opacity:1,
+                filter:"blur(0px)"
+            }}
+            transition={{
+                duration:0.5,
+                ease:"easeOut",
+                delay:index*0.1,
+            }}
+                >
            <Image
             key = {logo.title }
            src = {logo.src}
            width = {100}
            height = {100}
             alt = {logo.title}
-            className="size-20 object-contain"
+            className="size-20 object-contain mx-auto mt-10"
            />
+           </motion.div>
         ))}
         </div>
         </div>  

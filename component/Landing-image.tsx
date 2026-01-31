@@ -53,7 +53,7 @@ export const LandingImage = () =>{
             }}
             className=" perspective-[4000px] translate-x-20 -translate-y-40 ">
                     <Image 
-                    src = "https://assets.aceternity.com/screenshots/4.jpg"
+                    src = "https://assets.aceternity.com/screenshots/3.jpg"
                     alt = "Demo 1 for agentforce template"
                     height = {1080}
                     width = {1920}
