@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Inter, Manrope } from 'next/font/google';
 import { ThemeProvider } from "@/provider/theme-provider";
@@ -43,9 +42,7 @@ export default function RootLayout({
             <Navbar/>
           <main className="bg-background text-foreground min-h-screen">{children}</main>
         </ThemeProvider>
-      
-      
-       
+  
       </body>
     </html>
   );
